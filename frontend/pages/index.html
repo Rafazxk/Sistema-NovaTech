@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech | Soluções Inteligentes</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <header id="navbar">
+        <nav class="container">
+            <div class="logo">Nova<span>Tech</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="auth-group">
+                <button class="btn-text" id="open-login">Entrar</button>
+                <button class="btn-primary" id="open-signup">Começar Agora</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-bg-glow"></div>
+            <div class="hero-content">
+                <h1 class="reveal-top">Transforme sua rotina com <span>Inteligência</span>.</h1>
+                <p class="reveal-bottom">A NovaTech oferece a plataforma mais intuitiva para gestão de vendas do mercado atual. Simples, rápido e eficiente.</p>
+                <div class="hero-btns reveal-bottom">
+                    <button class="btn-primary btn-lg">Ver Demonstração</button>
+                    <button class="btn-outline btn-lg">Saiba Mais</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="products container">
+            <h2 class="section-title reveal-top">Nossos Produtos</h2>
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="badge">Popular</div>
+                    <h3>Dashboard Pro</h3>
+                    <p>Análise de dados em tempo real com gráficos interativos.</p>
+                    <span class="price">R$ 49/mês</span>
+                    <div class="product-card-button"> 
+                        <button class="btn-buy">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <h3>API Connect</h3>
+                    <p>Integração total com seus sistemas favoritos em minutos.</p>
+                    <span class="price">R$ 89/mês</span>
+                    <div class="product-card-button"> 
+                        <button class="btn-buy">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="contact container">
+            <div class="contact-card reveal-bottom">
+                <h2>Fale com um especialista</h2>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <label>Nome</label>
+                        <input type="text" required placeholder="Seu nome">
+                    </div>
+                    <div class="input-group">
+                        <label>E-mail</label>
+                        <input type="email" required placeholder="exemplo@email.com">
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="auth-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="modal-title">Entrar na conta</h2>
+            <form        id="auth-form" class="auth-form">
+                <div id="group-nome"> 
+                    <label>Nome</label>
+                    <input type="text" placeholder="Seu nome completo" name="nome">
+                </div>
+                <div> 
+                    <label>E-mail</label>
+                    <input type="email" placeholder="E-mail" name="email" required>
+                </div>
+                <div>
+                    <label>Senha</label>
+                    <input type="password" placeholder="Senha" name="senha" required>
+                </div>
+                <button type="submit" class="btn-primary full-width">Confirmar</button>
+            </form>
+            <span class="close-modal">&times;</span>
+        </div>  
+    </div>
+
+    <footer>
+        <p>&copy; 2026 NovaTech Inc. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
